@@ -1,0 +1,22 @@
+{
+  "name": "Exposure Protect0r",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Hide your real IP address when streaming your screen.",
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
